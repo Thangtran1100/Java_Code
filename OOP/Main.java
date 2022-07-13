@@ -1,7 +1,6 @@
+package OOP;
 
-public class datatype
-{
-    
+public class Main {
     public static void main(String[] args)
     {
         
