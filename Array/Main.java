@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class Main {
     private static Scanner scanner = new Scanner(System.in);
+    private static int[] baseData = new int[10];
+
     public static void main(String[] args)
     {
         //Declare an array
@@ -12,16 +14,19 @@ public class Main {
         //Or int[] myIntArray = {1,2,3,4,5,6,7,8,9,10};
         //Array length: myIntArray.length
 
-        int[] myIntegers = getIntegers(5);
-        for(int i=0; i < myIntegers.length; i++)
-        {
-            System.out.println("Element " + i + ", type value was "+ myIntegers[i]);
-        }
+        // int[] myIntegers = getIntegers(5);
+        // for(int i=0; i < myIntegers.length; i++)
+        // {
+        //     System.out.println("Element " + i + ", type value was "+ myIntegers[i]);
+        // }
 
-        int[] anotherArray = new int[]{4,5,6,7,8};
-        for(int i=0; i < anotherArray.length; i++)
-        {
-            System.out.println("Element " + i + ", type value was "+ anotherArray[i]);
+        // int[] anotherArray = new int[]{4,5,6,7,8};
+        // for(int i=0; i < anotherArray.length; i++)
+        // {
+        //     System.out.println("Element " + i + ", type value was "+ anotherArray[i]);
+
+        
+
         }
     }
 
@@ -36,5 +41,16 @@ public class Main {
         }
 
         return values;
+    }
+
+    private static void resizeArray()
+    {
+        int[] original = baseData;
+
+        baseData = new int[12];
+        for(int i = 0; i < original.length; i++)
+        {
+            baseData[i] = original[i];
+        }
     }
 }
