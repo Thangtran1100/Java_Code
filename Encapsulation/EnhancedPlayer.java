@@ -1,5 +1,6 @@
 package Encapsulation;
 
+//Encapsulation example
 public class EnhancedPlayer {
     private String name;
     private int health = 100;
